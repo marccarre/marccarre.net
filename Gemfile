@@ -34,6 +34,19 @@ end
 # Resolve locale easily in application controller:
 gem 'http_accept_language', '>= 2.0.1'
 
+group :test do
+  gem 'shoulda'
+  gem 'mocha'
+  gem 'capybara'
+end
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'simplecov'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

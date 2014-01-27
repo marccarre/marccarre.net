@@ -1,11 +1,11 @@
 require File.expand_path('../boot', __FILE__)
 
 # Pick the frameworks you want:
-# require "active_record/railtie"
-require "action_controller/railtie"
-require "action_mailer/railtie"
-require "sprockets/railtie"
-require "rails/test_unit/railtie"
+# require 'active_record/railtie'
+require 'action_controller/railtie'
+require 'action_mailer/railtie'
+require 'sprockets/railtie'
+require 'rails/test_unit/railtie'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -22,7 +22,17 @@ module MarccarreNet
     # config.time_zone = 'Central Time (US & Canada)'
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '*.{yml}').to_s]
+    
+    # Restrict locales to what we actually translate, to avoid pollution from dependencies/gems:
+    config.i18n.available_locales = [:fr, :en]
+    
+    config.i18n.default_locale = :en
+
+    # Avoid error message: 
+    # [deprecated] I18n.enforce_available_locales will default to true in the future. 
+    # If you really want to skip validation of your locale you can set 
+    # I18n.enforce_available_locales = false to avoid this message.
+    I18n.enforce_available_locales = true
   end
 end

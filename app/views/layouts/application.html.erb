@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>MarccarreNet</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Marc Carr&eacute;&#39;s homepage</title>
+    <!-- CSS -->
+    <link href='//netdna.bootstrapcdn.com/bootswatch/3.0.3/yeti/bootstrap.min.css' rel='stylesheet'>
+    <link href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 
-<%= yield %>
+    <!-- Javascript -->
+    <script src='//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'></script>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
-</body>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <div class='navbar navbar-default navbar-fixed-top'>
+      <div class='container'>
+      <div class='navbar-header'>
+        <%= link_to "Marc<span class='blue-goldman'>Carré</span>.net".html_safe, root_path, class: 'navbar-brand' %>
+      </div>
+      <div class='navbar-collapse collapse'>
+        <ul class='nav navbar-nav'>
+          <li class="<%= 'active' if current_page?(articles_path) %>"><%= link_to t('menu.articles'), articles_path %></li>
+          <li class="<%= 'active' if current_page?(projects_path) %>"><%= link_to t('menu.projects'), projects_path %></li>
+          <li class="<%= 'active' if current_page?(about_path)    %>"><%= link_to t('menu.about'),    about_path %></li>
+        </ul>
+        <ul class='nav navbar-nav navbar-right'>
+          <li class='icon'><a href='https://github.com/marccarre' title='GitHub profile'><i class='fa fa-github-square fa-3x'></i></a></li>
+          <li class='icon'><a href='http://uk.linkedin.com/in/marccarre' title='LinkedIn profile'><i class='fa fa-linkedin-square fa-3x'></i></a></li>
+          <li class='icon'><a href='https://twitter.com/marccarre' title='Twitter page'><i class='fa fa-twitter-square fa-3x'></i></a></li>
+          <li class='flag'><%= link_to image_tag('i18n/en.gif'), url_for(locale: :en), title: 'English version' %></li>
+          <li class='flag'><%= link_to image_tag('i18n/fr.gif'), url_for(locale: :fr), title: 'Version française' %></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class='container'>      
+      <%= yield %>
+    </div>
+  </body>
 </html>

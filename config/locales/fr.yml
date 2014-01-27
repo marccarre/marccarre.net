@@ -2,10 +2,10 @@
 # and are automatically loaded by Rails. If you want to use locales other
 # than English, add the necessary files in this directory.
 
-en:
+fr:
   menu:
     articles: 'Articles'
-    projects: 'Projects'
-    about: 'About me'
+    projects: 'Projets'
+    about: 'A propos'
   content:
-    coming_soon: 'Coming soon...'
+    coming_soon: 'En construction...'
