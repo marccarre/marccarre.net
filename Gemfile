@@ -47,6 +47,9 @@ group :development, :test do
   gem 'simplecov'
 end
 
+# Multi-processed web server, for better scalabity than with Webrick:
+gem 'unicorn'
+
 # Deployment to Heroku:
 gem 'rails_12factor', group: :production
 
