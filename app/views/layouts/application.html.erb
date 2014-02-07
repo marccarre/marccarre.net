@@ -3,41 +3,47 @@
   <head>
     <title>Marc Carr&eacute;&#39;s homepage</title>
     <!-- CSS -->
-    <link href='//netdna.bootstrapcdn.com/bootswatch/3.0.3/yeti/bootstrap.min.css' rel='stylesheet'>
-    <link href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <link href="//netdna.bootstrapcdn.com/bootswatch/3.0.3/yeti/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 
     <!-- Javascript -->
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <script src='//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <%= csrf_meta_tags %>
   </head>
   <body>
     <!-- Fixed navbar -->
-    <div class='navbar navbar-default navbar-fixed-top'>
-      <div class='container'>
-      <div class='navbar-header'>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <%= link_to "Marc<span class='blue-goldman'>Carré</span>.net".html_safe, root_path, class: 'navbar-brand' %>
       </div>
-      <div class='navbar-collapse collapse'>
-        <ul class='nav navbar-nav'>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
           <li class="<%= 'active' if current_page?(articles_path) %>"><%= link_to t('menu.articles'), articles_path %></li>
           <li class="<%= 'active' if current_page?(projects_path) %>"><%= link_to t('menu.projects'), projects_path %></li>
           <li class="<%= 'active' if current_page?(about_path)    %>"><%= link_to t('menu.about'),    about_path %></li>
         </ul>
-        <ul class='nav navbar-nav navbar-right'>
-          <li class='icon'><a href='https://github.com/marccarre' title='GitHub profile'><i class='fa fa-github-square fa-3x'></i></a></li>
-          <li class='icon'><a href='http://uk.linkedin.com/in/marccarre' title='LinkedIn profile'><i class='fa fa-linkedin-square fa-3x'></i></a></li>
-          <li class='icon'><a href='https://twitter.com/marccarre' title='Twitter page'><i class='fa fa-twitter-square fa-3x'></i></a></li>
-          <li class='flag'><%= link_to image_tag('i18n/en.gif'), url_for(locale: :en), title: 'English version' %></li>
-          <li class='flag'><%= link_to image_tag('i18n/fr.gif'), url_for(locale: :fr), title: 'Version française' %></li>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="icon"><a href="https://github.com/marccarre" title="GitHub profile"><i class="fa fa-github-square fa-3x"></i></a></li>
+          <li class="icon"><a href="http://uk.linkedin.com/in/marccarre" title="LinkedIn profile"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
+          <li class="icon"><a href="https://twitter.com/marccarre" title="Twitter page"><i class="fa fa-twitter-square fa-3x"></i></a></li>
+          <li class="flag"><%= link_to image_tag('i18n/en.gif'), url_for(locale: :en), title: 'English version' %></li>
+          <li class="flag"><%= link_to image_tag('i18n/fr.gif'), url_for(locale: :fr), title: 'Version française' %></li>
         </ul>
       </div><!--/.nav-collapse -->
       </div>
     </div>
 
     <!-- Content -->
-    <div class='container'>      
+    <div class="container">      
       <%= yield %>
     </div>
     <%= render 'layouts/footer' %>
