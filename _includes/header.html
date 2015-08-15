@@ -14,11 +14,16 @@
       </a>
 
       <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% for page in site.data.navigation[page.lang] %}
+          {% if page[1].title %}
+          <a class="page-link" href="{{ page[1].url | prepend: site.baseurl }}">{{ page[1].title }}</a>
           {% endif %}
         {% endfor %}
+        {% assign posts = site.posts | where: "name", page.name | sort: 'path' %}
+        {% for post in posts %}
+          <a href="{{ post.url }}" class="page-link {{ post.lang }}">{{ post.lang }}</a>
+        {% endfor %}
+
       </div>
     </nav>
 

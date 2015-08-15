@@ -1,0 +1,6 @@
+{% assign pages=site.page | where: "name", page.name %}
+{% if pages.size > 1 %}
+  {% for page in pages %}
+    <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>{% if forloop.index != pages.size - 1 %} | {% endif %}
+  {% endfor %}
+{% endif %}

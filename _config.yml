@@ -1,7 +1,5 @@
 # Site settings
-title: Marc Carré's homepage
-description: > # this means to ignore newlines until "baseurl:"
-  My interests, projects and other geeky pastimes.
+title: Marc Carré
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.marccarre.net" # the base hostname & protocol for your site
 twitter_username: marccarre
@@ -11,3 +9,28 @@ github_username:  marccarre
 markdown: kramdown
 encoding: utf-8
 timezone: Europe/London
+
+# Multilingual settings:
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: default
+      lang: en
+  -
+    scope:
+      path: _posts/fr
+    values:
+      layout: default
+      lang: fr
+  -
+    scope:
+      path: _posts/en/pages
+    values:
+      type: pages
+  -
+    scope:
+      path: _posts/fr/pages
+    values:
+      type: pages

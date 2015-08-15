@@ -1,0 +1,20 @@
+en:
+  articles:
+    title: "Articles"
+    url: "/"
+  projects: 
+    title: "Projects"
+    url: "/projects/"
+  about:
+    title: "About"
+    url: "/about/"
+fr:
+  articles:
+    title: "Articles"
+    url: "/articles/"
+  projects: 
+    title: "Projets"
+    url: "/projets/"
+  about: 
+    title: "À propos"
+    url: "/a-propos/"

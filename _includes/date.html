@@ -1,0 +1,21 @@
+{% assign day   = include.date | date: "%-d" | plus: 0 %}
+{% assign month = include.date | date: "%-m" | plus: 0 %}
+{% assign year  = include.date | date: "%Y"  | plus: 0 %}
+{% assign day = 21 %}
+
+{% if page.lang == 'en' %}
+  {% assign month = site.data.translations[page.lang].months[month] %}
+  {% capture suffix %}{% case day %}{% when 1 or 21 or 31 %}st{% when 2 or 22 %}nd{% when 3 or 23 %}rd{% else %}th{% endcase %}{% endcapture %}
+  {{ month }} {{ day }}<sup>{{ suffix }}</sup>, {{ year }}
+
+{% elsif page.lang == 'fr' %}
+  {% assign month = site.data.translations[page.lang].months[month] %}
+  {{ day }}{% if day == 1 %}<sup>er</sup>{% endif %} {{ month }} {{ year }}
+
+{% elsif page.lang == 'zh' %}
+  {{ include.date | date: "年%Y月%m日%d" }}
+
+{% else %}
+  {{ include.date | date: "%Y-%m-%d" }}
+
+{% endif %}

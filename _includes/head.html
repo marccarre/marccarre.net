@@ -9,4 +9,10 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+  <!-- Links to available translations of this page. -->
+  {% assign posts=site.posts | where: "name", page.name %}
+  {% for post in posts %}
+    {% if post.lang != page.lang %}<link rel="alternate" hreflang="{{post.lang}}" href="{{post.url}}" />{% endif %}
+  {% endfor %}
 </head>
