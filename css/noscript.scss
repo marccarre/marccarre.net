@@ -1,0 +1,30 @@
+---
+# Sass file for browsers which disable scripts and fonts (hence breaking FontAwesome).
+---
+.navbar-default .navbar-nav > li.icon > a {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  > i.fa {
+    display: inline-block;
+  }
+  > i.fa-github-square:before, i.fa-linkedin-square:before, i.fa-twitter-square:before, i.fa-rss-square:before {
+    content: none;
+  }
+  > i.fa-github-square, i.fa-linkedin-square, i.fa-twitter-square, i.fa-rss-square {
+    background-position: 0px 3px;
+    width: 33.348px;
+    height: 39px;
+  }
+  > i.fa-github-square {
+    background-image: url('../img/github-square_ffffff_39x33.438.png');
+  }
+  > i.fa-linkedin-square {
+    background-image: url('../img/linkedin-square_ffffff_39x33.438.png');
+  }
+  > i.fa-twitter-square {
+    background-image: url('../img/twitter-square_ffffff_39x33.438.png');
+  }
+  > i.fa-rss-square {
+    background-image: url('../img/rss-square_ffffff_39x33.438.png');
+  }
+}

@@ -1,20 +1,26 @@
 en:
   articles:
     title: "Articles"
+    name: "articles"
     url: "/"
   projects: 
     title: "Projects"
+    name: "projects"
     url: "/projects/"
   about:
     title: "About"
+    name: "about"
     url: "/about/"
 fr:
   articles:
     title: "Articles"
+    name: "articles"
     url: "/articles/"
   projects: 
     title: "Projets"
+    name: "projects"
     url: "/projets/"
   about: 
     title: "À propos"
+    name: "about"
     url: "/a-propos/"

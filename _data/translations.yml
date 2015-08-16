@@ -1,5 +1,6 @@
 en:
   description: "My interests, projects and other geeky pastimes."
+  noscript: 'Please enable JavaScript to view the <a href="https://disqus.com/home/forums/marccarre/">comments</a> (powered by <a href="https://disqus.com/?ref_noscript" rel="nofollow">Disqus</a>).'
   created: "Published on the"
   author: "by"
   months:
@@ -17,6 +18,7 @@ en:
     12: "December"
 fr:
   description: "Mes centres d'intérêts, projets et autres passe-temps geek."
+  noscript: 'Veuillez activer Javascript pour accéder aux <a href="https://disqus.com/home/forums/marccarre/">commentaires</a> (propulsés par <a href="https://disqus.com/?ref_noscript" rel="nofollow">Disqus</a>).'
   created: "Publié le"
   author: "par"
   months:

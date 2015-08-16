@@ -1,7 +1,0 @@
-{% assign posts=site.posts | where: "name", page.name | sort: 'path' %}
-{% if posts.size > 1 %}
- • 
-  {% for post in posts %}
-    <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>{% if forloop.index != posts.size - 1 %} | {% endif %}
-  {% endfor %}
-{% endif %}

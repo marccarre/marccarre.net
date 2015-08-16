@@ -1,11 +1,17 @@
-# Site settings
-title: Marc Carré
+# Site settings:
+title: "Marc<span class='brand-color'>Carré</span>"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.marccarre.net" # the base hostname & protocol for your site
+copyright_owner: Marc Carré
+linkedin_username: marccarre
 twitter_username: marccarre
 github_username:  marccarre
+disqus_shortname: marccarre
+google_analytics:
+  id: UA-15812499-2
+  domain: marccarre.net
 
-# Build settings
+# Build settings:
 markdown: kramdown
 encoding: utf-8
 timezone: Europe/London
@@ -18,6 +24,7 @@ defaults:
     values:
       layout: default
       lang: en
+      comments: false
   -
     scope:
       path: _posts/fr
@@ -34,3 +41,13 @@ defaults:
       path: _posts/fr/pages
     values:
       type: pages
+  -
+    scope:
+      path: _posts/en/posts
+    values:
+      comments: true
+  -
+    scope:
+      path: _posts/fr/posts
+    values:
+      comments: true

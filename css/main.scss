@@ -3,50 +3,104 @@
 ---
 @charset "utf-8";
 
+$brand-color: #7399c6;
+$header-color: #444444;
+$footer-color: #444444;
+$footer-text-color: #9f9f9f;
 
-
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
+$header-height: 45px;
+$header-spacing: 10px;
+$footer-height: 20px;
+$footer-spacing: 5px;
 
 
 
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
+html {
+  /* Sticky footer */
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: ($header-height + $header-spacing);
+  margin-bottom: ($footer-height + $footer-spacing);
+}
+
+.footer {
+  /* Sticky footer */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  /* Misc. */
+  height: $footer-height;
+  background-color: $footer-color;
+  > .container {
+    font-size: 80%;
+    color: $footer-text-color;
+    p {
+      /* Remove margins which make the scroll appear if footer size is too small */
+      margin: 0px;
+      height: $footer-height;
     }
+  }
 }
 
 
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+.navbar {
+  margin-bottom: $header-spacing;
+}
+.navbar-default {
+  background-color: $header-color;
+  .navbar-nav > {
+    li > a, li.active > a {
+      &:focus, &:hover {
+        background-color: $brand-color;
+      }
+    }
+    li.icon > a {
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+  }
+}
+
+
+
+.post-comments {
+  margin-top: 70px;
+}
+
+
+
+.background-brand-color {
+  background-color: $brand-color;
+}
+
+.brand-color {
+  color: $brand-color;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+h1, .h1 {
+  font-size: 23px;
+}
+h2, .h2 {
+  font-size: 21px;
+}
+h3, .h3 {
+  font-size: 19px;
+}
+h4, .h4 {
+  font-size: 17px;
+}
+h5, .h5 {
+  font-size: 15px;
+}
+h6, .h6 {
+  font-size: 13px;
+}
