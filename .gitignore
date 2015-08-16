@@ -19,3 +19,4 @@ pickle-email-*.html
 .env
 _site
 .jekyll-metadata
+Gemfile.lock
