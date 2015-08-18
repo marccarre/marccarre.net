@@ -11,7 +11,7 @@ $footer-text-color: #9f9f9f;
 $header-height: 45px;
 $header-spacing: 10px;
 $footer-height: 20px;
-$footer-spacing: 5px;
+$footer-spacing: 20px;
 
 
 
@@ -33,15 +33,16 @@ body {
   width: 100%;
 
   /* Misc. */
-  height: $footer-height;
+  min-height: $footer-height;
   background-color: $footer-color;
   > .container {
     font-size: 80%;
+    padding: 0px;
     color: $footer-text-color;
     p {
       /* Remove margins which make the scroll appear if footer size is too small */
       margin: 0px;
-      height: $footer-height;
+      background-color: $footer-color;
     }
   }
 }
