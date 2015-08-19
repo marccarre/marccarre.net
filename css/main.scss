@@ -73,7 +73,14 @@ body {
   margin-top: 70px;
 }
 
+/* Octicons' optimal size is 16px, but this is slightly too large for our use-case. */
+.octicon, .mega-octicon {
+  font: normal normal normal 12px/1 octicons;
+}
 
+.badge {
+  background-color: $brand-color;
+}
 
 .background-brand-color {
   background-color: $brand-color;

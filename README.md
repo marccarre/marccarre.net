@@ -8,4 +8,5 @@ Personal website:
 * responsive design based on Boostrap
 * gracefully degrades if Javascript and fonts are disabled
 * support for multiple languages / i18n
+* lists GitHub projects
 * comments powered by Disqus

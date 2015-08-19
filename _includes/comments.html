@@ -1,9 +1,10 @@
 <hr />
-<div id="disqus_thread"></div>
-<noscript>{{ site.data.translations[page.lang].noscript }}</noscript>
+<div id="disqus_thread">
+  <noscript>{{ site.data.translations[page.lang].disqus_noscript }}</noscript>
+</div>
 <hr />
 {{ page.category }}
-<script type="text/javascript">
+<script type="text/javascript" >
     // Configuration:
     var disqus_shortname = '{{ site.disqus_shortname }}';
     var disqus_title = '{{ page.title }}';

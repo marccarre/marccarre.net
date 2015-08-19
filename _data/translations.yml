@@ -1,6 +1,10 @@
 en:
   description: "My interests, projects and other geeky pastimes."
-  noscript: 'Please enable JavaScript to view the <a href="https://disqus.com/home/forums/marccarre/">comments</a> (powered by <a href="https://disqus.com/?ref_noscript" rel="nofollow">Disqus</a>).'
+  disqus_noscript: 'Please enable JavaScript to view the <a href="https://disqus.com/home/forums/marccarre/">comments</a> (powered by <a href="https://disqus.com/?ref_noscript" rel="nofollow">Disqus</a>).'
+  github_intro: 'Here are some of my projects, or projects I have contributed to, all available on GitHub: <br/><br/>'
+  github_noscript: 'Please enable JavaScript to view the selection of GitHub projects, or alternatively, click on the following link:'
+  github_load: "[Loading GitHub projects...]"
+  github_error: "[Oops, something went wrong, and GitHub projects could not be loaded. Please report it to Marc.]"
   created: "Published on the"
   author: "by"
   months:
@@ -18,7 +22,11 @@ en:
     12: "December"
 fr:
   description: "Mes centres d'intérêts, projets et autres passe-temps geek."
-  noscript: 'Veuillez activer Javascript pour accéder aux <a href="https://disqus.com/home/forums/marccarre/">commentaires</a> (propulsés par <a href="https://disqus.com/?ref_noscript" rel="nofollow">Disqus</a>).'
+  disqus_noscript: 'Activez Javascript pour accéder aux <a href="https://disqus.com/home/forums/marccarre/">commentaires</a> (propulsés par <a href="https://disqus.com/?ref_noscript" rel="nofollow">Disqus</a>).'
+  github_intro: "Voici certains de mes projets, ainsi que des projets auxquels j'ai contribué, tous disponibles sous GitHub: <br/><br/>"
+  github_noscript: 'Activez Javascript pour accéder à ma sélection de projets GitHub, ou sinon, cliquez sur le lien suivant :'
+  github_load: "[Chargement des projets GitHub...]"
+  github_error: "[Hmmmm, une brêche spatio-temporelle s'est ouverte et les projets GitHub n'ont pu être chargés. Merci de le signaler à Marc.]"
   created: "Publié le"
   author: "par"
   months:

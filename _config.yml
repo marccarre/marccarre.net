@@ -5,11 +5,39 @@ url: "http://www.marccarre.net" # the base hostname & protocol for your site
 copyright_owner: Marc Carré
 linkedin_username: marccarre
 twitter_username: marccarre
-github_username:  marccarre
 disqus_shortname: marccarre
 google_analytics:
   id: UA-15812499-2
   domain: marccarre.net
+
+# GitHub settings:
+github_username:  marccarre
+github_blacklist:
+- algo-exercises
+- algo-trading-strategy
+- angular-gantt
+- coursera-algs
+- coursera-progfun
+- cpp-empty-project
+- cpp-samples
+- datasetgenerator
+- eclipse-templates
+- google-codejam
+- helene-et-marc
+- kaggle-algotrading
+- kibana
+- machine-learning
+- marccarre.net
+- mooc-caltech-learning-from-data
+- play-2.1-RC1-with-play2war-0.9-RC1
+- project-euler-java
+- project-euler-python
+- project-euler-ruby
+- project-euler-scala
+- raspberrypi
+- scala-reactive
+- spring-db-testing
+- utilities
 
 # Build settings:
 markdown: kramdown
