@@ -8,11 +8,11 @@
 
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/yeti/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/octicons/octicons.css" | prepend: site.baseurl }}" />
-  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}" />
-  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/syntax-highlighting.css" | prepend: site.baseurl }}" />
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/octicons/octicons.css" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/main.css" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/syntax-highlighting.css" | prepend: site.baseurl | prepend: site.url }}" />
   <noscript>
-    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/noscript.css" | prepend: site.baseurl }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/noscript.css" | prepend: site.baseurl | prepend: site.url }}" />
   </noscript>
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />

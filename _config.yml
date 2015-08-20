@@ -1,7 +1,8 @@
 # Site settings:
 title: "Marc<span class='brand-color'>Carré</span>"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.marccarre.net" # the base hostname & protocol for your site
+# url: "http://marccarre.github.io"  # the base hostname & protocol for your site
+baseurl: "/marccarre.net"  # the base URL for your site
 permalink: /:year/:month/:day/:title.html
 copyright_owner: Marc Carré
 linkedin_username: marccarre

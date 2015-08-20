@@ -4,6 +4,6 @@
     <noscript>
       <p class="text-warning">[{{ site.data.translations[page.lang].github_noscript }} <a href="https://github.com/{{ site.github_username }}?tab=repositories">GitHub</a>]</p>
     </noscript>
-    <script type="text/javascript" src="{{ "/assets/js/github.js" | prepend: site.baseurl }}"></script>
+    <script type="text/javascript" src="{{ "/assets/js/github.js" | prepend: site.baseurl | prepend: site.url }}"></script>
   </div>
 </section>
