@@ -10,3 +10,5 @@ Personal website:
 * support for multiple languages / i18n
 * lists GitHub projects
 * comments powered by Disqus
+
+URL: [http://marccarre.github.io/marccarre.net/](http://marccarre.github.io/marccarre.net/)
