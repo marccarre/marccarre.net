@@ -1,7 +1,6 @@
 {% assign day   = include.date | date: "%-d" | plus: 0 %}
 {% assign month = include.date | date: "%-m" | plus: 0 %}
 {% assign year  = include.date | date: "%Y"  | plus: 0 %}
-{% assign day = 21 %}
 
 {% if page.lang == 'en' %}
   {% assign month = site.data.translations[page.lang].months[month] %}
