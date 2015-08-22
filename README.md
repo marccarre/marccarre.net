@@ -11,5 +11,7 @@ Personal website:
 * support for multiple languages / i18n
 * lists GitHub projects
 * comments powered by Disqus
+* compressed CSS
+* compressed HTML (using [jekyll-compress-html](https://github.com/penibelst/jekyll-compress-html))
 
 URL: [http://www.marccarre.net](http://www.marccarre.net) / [http://marccarre.github.io](http://marccarre.github.io)

@@ -20,15 +20,12 @@
 
 {% if page.comments %}
   <script type="text/javascript" >
-    // Configuration:
     var disqus_shortname = '{{ site.disqus_shortname }}';
     var disqus_title = '{{ page.title }}';
     var disqus_identifier = '{{ page.url }}';
     var disqus_config = function () { 
       this.language = '{{ page.lang }}';
     };
-    
-    // DO NOT EDIT BELOW THIS LINE:
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
       dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';

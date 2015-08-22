@@ -46,6 +46,13 @@ encoding: utf-8
 timezone: Europe/London
 sass:
   style: :compressed
+compress_html:
+  clippings: all
+  comments: ["<!--", "-->"]
+  endings: all
+  profile: false
+  ignore:
+    envs: [development]  # Skips HTML compression if the following environment variable is set: JEKYLL_ENV=development
 
 # Multilingual settings:
 defaults:
