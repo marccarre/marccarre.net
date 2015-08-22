@@ -5,4 +5,5 @@ script:
   - bundle exec jekyll build --config _config.yml,_config_cit.yml && bundle exec htmlproof ./_site
 branches:
   only:
+    - master
     - gh-pages
