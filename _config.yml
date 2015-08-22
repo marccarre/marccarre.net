@@ -44,6 +44,8 @@ github_blacklist:
 markdown: kramdown
 encoding: utf-8
 timezone: Europe/London
+sass:
+  style: :compressed
 
 # Multilingual settings:
 defaults:
