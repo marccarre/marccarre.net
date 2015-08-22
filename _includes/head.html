@@ -23,7 +23,4 @@
   {% for post in posts %}
     {% if post.lang != page.lang %}<link rel="alternate" hreflang="{{post.lang}}" href="{{post.url}}" />{% endif %}
   {% endfor %}
-
-  <!-- Javascript -->
-  {% include scripts.html %}
 </head>
