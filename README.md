@@ -1,7 +1,7 @@
-marccarre.net
-=============
+marccarre.net / marccarre.github.io
+===================================
 
-[![Build Status](https://travis-ci.org/marccarre/marccarre.net.svg?branch=master)](https://travis-ci.org/marccarre/marccarre.net)
+[![Build Status](https://travis-ci.org/marccarre/marccarre.github.io.svg?branch=master)](https://travis-ci.org/marccarre/marccarre.github.io)
 
 Personal website:
 * built with Jekyll (`jekyll serve --config=_config.yml,_config_cit.yml` to run locally)
@@ -12,4 +12,4 @@ Personal website:
 * lists GitHub projects
 * comments powered by Disqus
 
-URL: [http://www.marccarre.net](http://www.marccarre.net)
+URL: [http://www.marccarre.net](http://www.marccarre.net) / [http://marccarre.github.io](http://marccarre.github.io)
