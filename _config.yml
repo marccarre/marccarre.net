@@ -1,6 +1,6 @@
 # Site settings:
 title: "Marc<span class='brand-color'>Carré</span>"
-url: "http://www.marccarre.net"  # the base hostname & protocol for your site
+url: "http://www.marccarre.com"  # the base hostname & protocol for your site
 baseurl: ""  # the subpath of your site, e.g. /blog/
 permalink: /:year/:month/:day/:title.html
 copyright_owner: Marc Carré
