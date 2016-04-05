@@ -65,27 +65,25 @@ defaults:
       comments: false
   -
     scope:
-      path: _posts/fr
-    values:
-      layout: default
-      lang: fr
-  -
-    scope:
       path: _posts/en/pages
     values:
+      lang: en
       type: pages
   -
     scope:
       path: _posts/fr/pages
     values:
+      lang: fr
       type: pages
   -
     scope:
       path: _posts/en/posts
     values:
+      lang: en
       comments: true
   -
     scope:
       path: _posts/fr/posts
     values:
+      lang: fr
       comments: true
