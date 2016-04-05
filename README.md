@@ -1,4 +1,4 @@
-marccarre.net / marccarre.github.io
+marccarre.com / marccarre.github.io
 ===================================
 
 [![Build Status](https://travis-ci.org/marccarre/marccarre.github.io.svg?branch=master)](https://travis-ci.org/marccarre/marccarre.github.io)
@@ -14,4 +14,4 @@ Personal website:
 * compressed CSS
 * compressed HTML (using [jekyll-compress-html](https://github.com/penibelst/jekyll-compress-html))
 
-URL: [http://www.marccarre.net](http://www.marccarre.net) / [http://marccarre.github.io](http://marccarre.github.io)
+URL: [http://www.marccarre.com](http://www.marccarre.com) / [http://marccarre.github.io](http://marccarre.github.io)
