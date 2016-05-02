@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.2.0
 script:
-  - bundle exec jekyll build --config _config.yml,_config_cit.yml && bundle exec htmlproofer ./_site
+  - bundle exec jekyll build --config _config.yml,_config_cit.yml && bundle exec htmlproofer --only-4xx ./_site
 branches:
   only:
     - master
