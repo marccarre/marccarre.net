@@ -5,6 +5,7 @@ en:
   github_noscript: 'Please enable JavaScript to view the selection of GitHub projects, or alternatively, click on the following link:'
   github_load: "[Loading GitHub projects...]"
   github_error: "[Oops, something went wrong, and GitHub projects could not be loaded. Please report it to Marc.]"
+  gist_noscript: 'Please enable JavaScript to view source code, or alternatively, click on the following link to access the corresponding '
   created: "Published on the"
   author: "by"
   months:
@@ -27,6 +28,7 @@ fr:
   github_noscript: 'Activez Javascript pour accéder à ma sélection de projets GitHub, ou sinon, cliquez sur le lien suivant :'
   github_load: "[Chargement des projets GitHub...]"
   github_error: "[Hmmmm, une brêche spatio-temporelle s'est ouverte et les projets GitHub n'ont pu être chargés. Merci de le signaler à Marc.]"
+  gist_noscript: 'Activez Javascript pour accéder au code source, ou sinon, cliquez sur le lien suivant pour accéder au '
   created: "Publié le"
   author: "par"
   months:
