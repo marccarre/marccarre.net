@@ -80,10 +80,12 @@ defaults:
       path: _posts/en/posts
     values:
       lang: en
+      type: posts
       comments: true
   -
     scope:
       path: _posts/fr/posts
     values:
       lang: fr
+      type: posts
       comments: true
