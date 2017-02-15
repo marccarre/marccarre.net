@@ -3,7 +3,7 @@ en:
     title: "Articles"
     name: "articles"
     url: "/"
-  projects: 
+  projects:
     title: "Projects"
     name: "projects"
     url: "/projects/"
@@ -16,11 +16,11 @@ fr:
     title: "Articles"
     name: "articles"
     url: "/articles/"
-  projects: 
+  projects:
     title: "Projets"
     name: "projects"
     url: "/projets/"
-  about: 
+  about:
     title: "À propos"
     name: "about"
     url: "/a-propos/"
