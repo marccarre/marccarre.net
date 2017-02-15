@@ -3,7 +3,7 @@ layout: post
 title: "Java 8 Concurrency - CompletableFuture in practice"
 name: java-8-concurrency-completablefuture-in-practice
 date: 2016-05-08 18:38
-categories: 
+categories:
 - java
 - concurrency
 javascript: true
@@ -30,7 +30,7 @@ In this article, I will show, using various examples, how to best use `Completab
 
 # <span style="text-decoration: underline;">Example</span>: basic chaining
 
-Let's first consider the below computation, assuming each operation is expensive (and therefore takes a noticeable amount of time): 
+Let's first consider the below computation, assuming each operation is expensive (and therefore takes a noticeable amount of time):
 
 ![r=(x+1)+y](/assets/img/java-8-concurrency-completablefuture-in-practice/call_tree.png "Computation tree: r=(x+1)+y")
 {: .text-center}
@@ -66,9 +66,9 @@ However, if you look at the various functional abstractions available in Java 8,
 
 ## Start asynchronous operations
 
-Indeed, you can start an asynchronous operation either: 
+Indeed, you can start an asynchronous operation either:
 
-* using a [`Runnable`](https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html) with [`runAsync`](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html#runAsync-java.lang.Runnable-), or 
+* using a [`Runnable`](https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html) with [`runAsync`](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html#runAsync-java.lang.Runnable-), or
 * using a [`Supplier`](https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html) with [`supplyAsync`](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html#supplyAsync-java.util.function.Supplier-):
 
 |---------------------------------------------------------------------------------------------+---------------------+---------------------------------+-------------------------------------------------------+---------------------------|
@@ -82,10 +82,10 @@ Indeed, you can start an asynchronous operation either:
 
 ## Chain asynchronous operations
 
-Similarly, you can chain asynchronous operations either: 
+Similarly, you can chain asynchronous operations either:
 
-* using a [`Runnable`](https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html) with [`thenRun`](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html#thenRun-java.lang.Runnable-), or 
-* using a [`Consumer`](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html) with [`thenAccept`](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html#thenAccept-java.util.function.Consumer-), or 
+* using a [`Runnable`](https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html) with [`thenRun`](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html#thenRun-java.lang.Runnable-), or
+* using a [`Consumer`](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html) with [`thenAccept`](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html#thenAccept-java.util.function.Consumer-), or
 * using a [`Function`](https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html) with [`thenApply`](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html#thenApply-java.util.function.Function-):
 
 |-----------------------------------------------------------------------------------------------+---------------------+---------------------------------+----------------------------------------+---------------------------|
@@ -100,7 +100,7 @@ Similarly, you can chain asynchronous operations either:
 
 Chaining `CompletableFuture`s effectively is equivalent to attaching callbacks to the event "my future completed".
 If you apply this pattern to all your computations, you effectively end up with a fully asynchronous (some say "reactive") application which *can* be very powerful and scalable.
- 
+
 
 ## `Async` vs. non-`Async` methods
 
@@ -156,7 +156,7 @@ Let's first see what happens if you call [`get`](https://docs.oracle.com/javase/
 
 {% include collapsible_gist.html id="AsynchronousException" gist_id="2439456da4b63dfb0c2e931ce1204b01" %}
 
-As you can see in the above code example, 
+As you can see in the above code example,
 
 * the future completes with an exception -- `isCompletedExceptionally()` returns `true`
 * calling `get` re-throws the original exception wrapped in an `ExecutionException` -- the original exception being still accessible via `getCause`.
@@ -180,9 +180,9 @@ For example, if you are writing a web service, you could return an object repres
 * status code `200`/`OK` and the expected result, or
 * status code `500`/`Internal Server Error` and details on the error.
 
-You can achieve this asynchronously using [`handle`](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html#handle-java.util.function.BiFunction-) and passing a function which converts: 
+You can achieve this asynchronously using [`handle`](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html#handle-java.util.function.BiFunction-) and passing a function which converts:
 
-* from your original type and a `Throwable`, 
+* from your original type and a `Throwable`,
 * to your new type.
 
 {% include collapsible_gist.html id="AsynchronousExceptionsHandlingWithHandle" gist_id="8d73763de4c3835d06659178f4c842b1" %}
@@ -205,10 +205,10 @@ This is possible with [`whenComplete`](https://docs.oracle.com/javase/8/docs/api
 
 In this example, let's consider an expensive computation to perform. Given it is expensive and its result can be re-used later, we decide to *cache* it in a remote store which, to make things harder, can also potentially be slow, e.g.: it may suffer from latency spikes.
 
-The application needs to serve the result to the end-user as soon as possible, so we both: 
+The application needs to serve the result to the end-user as soon as possible, so we both:
 
-* re-calculate the value, and 
-* load the value from the store, 
+* re-calculate the value, and
+* load the value from the store,
 
 in two different futures *in parallel*, and then:
 
@@ -266,7 +266,7 @@ We thoroughly explored [`CompletableFuture<T>`](https://docs.oracle.com/javase/8
 
 Hopefully, this:
 
-* made it easier for you to understand the API and how to use it, 
+* made it easier for you to understand the API and how to use it,
 * has convinced you of the usefulness of [`CompletableFuture<T>`](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html),
 * has made you more comfortable with asynchrony in general.
 
