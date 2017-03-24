@@ -22,11 +22,17 @@ github_blacklist:
 - cpp-empty-project
 - cpp-samples
 - datasetgenerator
+- dell-xps-13-9360
 - eclipse-templates
 - google-codejam
 - helene-et-marc
+- jinja
+- jupyterhub
 - kaggle-algotrading
 - kibana
+- kops
+- kubernetes.github.io
+- libpam4j
 - machine-learning
 - marccarre.github.io
 - mooc-caltech-learning-from-data
@@ -39,6 +45,7 @@ github_blacklist:
 - scala-reactive
 - spring-db-testing
 - utilities
+- xmind
 
 # Build settings:
 markdown: kramdown
