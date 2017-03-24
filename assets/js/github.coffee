@@ -1,12 +1,12 @@
 ---
 # Showcase GitHub projects (JavaScript/jQuery).
-# Potential alternatives: 
+# Potential alternatives:
 # - https://github.com/akshaykumar6/github-js
 # - https://github.com/zenorocha/jquery-github
 ---
 $ ->
   $('#github-projects').html('<span class="text-muted">{{ site.data.translations[page.lang].github_load }}</span>');
-  
+
   reposData = {}
 
   blackList = {}
@@ -75,12 +75,12 @@ $ ->
                   <div class="panel-body">
                     <div class="github-project-name"><a href="' + repo.html_url+ '">' + repo.name + '</a></div>
                     <div class="github-project-description clearfix">' + repo.description + '</div>
-                    <div class="github-project-activity"> 
+                    <div class="github-project-activity">
                       ' + (if repo.language? then '<span class="badge" title="Language">' + repo.language + '</span> ' else ' ') + '
                       <span class="badge" title="Watchers">' + repo.watchers_count + ' <span class="octicon octicon-eye"></span></span>
                       <span class="badge" title="Starred">' + repo.stargazers_count + ' <span class="octicon octicon-star"></span></span>
-                      <span class="badge" title="Forked">' + repo.forks_count + ' <span class="octicon octicon-repo-forked"></span></span> 
-                      <span class="badge" title="Opened issues">' + repo.open_issues_count + ' <span class="octicon octicon-issue-opened"></span></span> 
+                      <span class="badge" title="Forked">' + repo.forks_count + ' <span class="octicon octicon-repo-forked"></span></span>
+                      <span class="badge" title="Opened issues">' + repo.open_issues_count + ' <span class="octicon octicon-issue-opened"></span></span>
                       <div><small>Latest commit to <b>' + repo.default_branch + '</b> on: ' + repo.pushed_at.toLocaleDateString() + '</small></div>
                     </div>
                   </div>
@@ -100,7 +100,7 @@ $ ->
 
   renderAll = (reposDict) ->
     repos = values(reposDict)
-    repos.sort (a, b) -> 
+    repos.sort (a, b) ->
       activity_score = b.activity_score - a.activity_score  # Sort by activity in decreasing order
       return if activity_score == 0 then b.pushed_at > a.pushed_at else activity_score
     dom = ['<div class="row">']
@@ -108,7 +108,7 @@ $ ->
     dom.push '</div>'
     $('#github-projects').html(dom.join(''))
     adjustHeights()
-    
+
 
   typeIsArray = (o) ->
     return Object::toString.call(o) == '[object Array]'
@@ -121,7 +121,7 @@ $ ->
           console.log('Successfully loaded ' + response.data.length + ' GitHub repositorie(s).')
           reposData[repoData.name] = repoData for repoData in extractReposDetails(response.data)
           nextPage = findUrlForNextPage(response.meta)
-          if nextPage? 
+          if nextPage?
             getRepositories(nextPage)
           else if containsForkedRepo(reposData)
             getSourceRepoData(name) for name of reposData when reposData[name].fork
@@ -151,9 +151,9 @@ $ ->
     $.ajax
       url: url
       accepts: 'application/vnd.github.v3+json'
-      dataType: 'jsonp'  
+      dataType: 'jsonp'
       success: onSuccess
-      error: onError  
+      error: onError
 
 
   getRepositories = (url) ->
