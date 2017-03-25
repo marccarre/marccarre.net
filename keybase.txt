@@ -1,0 +1,67 @@
+==================================================================
+https://keybase.io/marccarre
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.marccarre.com
+  * I am marccarre (https://keybase.io/marccarre) on keybase.
+  * I have a public key with fingerprint E783 6CDE 2E42 F8FE 3847  0FBF 0626 58EF F69B 8B32
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101d59200ef65857ae9a0e89a68e5b6227265aee7e63eb17fddbe3d18a979c905e40a",
+            "fingerprint": "e7836cde2e42f8fe38470fbf062658eff69b8b32",
+            "host": "keybase.io",
+            "key_id": "062658eff69b8b32",
+            "kid": "0101d59200ef65857ae9a0e89a68e5b6227265aee7e63eb17fddbe3d18a979c905e40a",
+            "uid": "f68618c2508122eb84e508e854070219",
+            "username": "marccarre"
+        },
+        "service": {
+            "hostname": "www.marccarre.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1490449866,
+    "expire_in": 157680000,
+    "prev": "89023c5c0d62b9e324b1aa126e6c1794623543cff8f0a9a27afdb03995b87a68",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2
+
+owGtkn1oTlEcx5/HyzwT0WT7g1ZuIdrm3HPvPffcR2FeFiUbTUnp6Zx7f3euZ7v3
+cZ+XYSHykhhK3qKYppA0EfIeitoo0bBiytseMmKblLdzZ/zjX+efc87vfL+f8/v9
+ztk5tH8oEs4Zt+hDz4GtONyc5aFFrenXdRL3rJVStE6KQ+8E1RYkU7G4Y0lRCclI
+tjQDIwQ20aimMzAYAmowQkHjBGMdE40B6EAU4LJuWxYHxZIpM3TDNJAGKmJSkWQ7
+bhX4Cd9xUwILOlWIaQEGFdvUBoWqOrK5jYigUbBtYnDKFSyMS71k4BDJcZaEEscT
+MbGJ/U7vX/1/zjvdi7MJJTI1sYaojDFwqoJYAtVUpCMsG4EwCb7LakCoa5hvmsz3
+QVpdJIlwxjEh6GxQSp+ktra25K+sxPRqBCHheynP9KrF8dJUKhEN3KmViV458Fgf
+KMYd1xLNFIYM+EnHc6WoLJRmygnIsmogVTUoIUUSrEg4PsScQKHphCIxgmsgI5DU
+WIKwYmomsgjmBihY5TJjMiZATFk3VIIVTVVMW7wPYgbDOrMtjhTD0DjVRRuloLbl
+ridFdZEnqxLMpFPlslQ6KHzwlvDoAaFwJJQzsF/wzUKDc4f/+XvllYN+VpxCLTP1
+YV3Tr5/px0ZOqX42a3vpyaddC68U7BtReCG06tqJhrNrS7fsefzj1OZ1U7TGRHPT
+88nm1+z7cYWtZcMulPcUf67rbmo4PyYvbM8pnfC1omTCsbbCJ3TA7oL0pOyd1sMt
+exr3jv8cjyxec3Dz89JtPE95s2FqrLJr/P032U2LZ9HZbkV244J4bn5n0+2eaZOW
+dZqRczAv+yDnyPddD8eerL/X8SXSMfHGVv/oqO6yE/O73x2/2nJXW3952du8+v1P
+hhRfyl+QqQ+XrdrQ3FBwYN3cguKp3oebLxUn3T7jIzmz8fTFT+3u9Ber5x468ujV
+4ZEPd4SvFb3/diyTP6OtM35rYOMv
+=3GNV
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/marccarre
+
+==================================================================
