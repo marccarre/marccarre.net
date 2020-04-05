@@ -50,7 +50,7 @@ github_blacklist:
 # Build settings:
 markdown: kramdown
 encoding: utf-8
-timezone: Europe/London
+timezone: Asia/Tokyo
 sass:
   style: :compressed
 compress_html:
