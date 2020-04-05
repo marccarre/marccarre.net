@@ -44,7 +44,7 @@ A vulnerability may belong to more than one category.
 3. Repudiation: the ability to perform operations that cannot be tracked, or for which the attacker can actively cover their tracks, e.g.: prove who did `rm -fr /var/log`.
 4. Information Disclosure: the acquisition of data by a trust level that should not have access to it, e.g.: bad messaging, [SQL injection](https://www.owasp.org/index.php/SQL_Injection), [MITM](https://www.owasp.org/index.php/Man-in-the-middle_attack).
 5. Denial of Service: preventing legitimate users from accessing the service, e.g.: [SQL injection](https://www.owasp.org/index.php/SQL_Injection), [DDOS](https://www.owasp.org/index.php/Denial_of_Service).
-6. Elevation of Privilege: an attack aimed at allowing an entity of lower trust level to perform actions restricted to a higher trust level, e.g.: [SQL injection](https://www.owasp.org/index.php/SQL_Injection), [CSRF](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)).
+6. Elevation of Privilege: an attack aimed at allowing an entity of lower trust level to perform actions restricted to a higher trust level, e.g.: [SQL injection](https://www.owasp.org/index.php/SQL_Injection), [CSRF](https://owasp.org/www-community/attacks/csrf).
 
 Each vulnerability is then risk-assessed by "severity" and "probability".
 This can however be a bit vague, so using the below scoring system, [DREAD](https://en.wikipedia.org/wiki/DREAD_(risk_assessment_model)), can help be more objective & systematic.
