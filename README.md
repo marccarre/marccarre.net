@@ -14,4 +14,4 @@ Personal website:
 * compressed CSS
 * compressed HTML (using [jekyll-compress-html](https://github.com/penibelst/jekyll-compress-html))
 
-URL: [http://www.marccarre.com](http://www.marccarre.com) / [http://marccarre.github.io](http://marccarre.github.io)
+URL: [https://www.marccarre.com](https://www.marccarre.com) / [https://marccarre.github.io](https://marccarre.github.io)
