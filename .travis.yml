@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.2.0
+  - 2.6
 script:
   - bundle exec jekyll build --config _config.yml,_config_cit.yml && bundle exec htmlproofer --only-4xx ./_site
 branches:
