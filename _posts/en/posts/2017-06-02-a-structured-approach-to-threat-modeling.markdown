@@ -5,7 +5,6 @@ name: a-structured-approach-to-threat-modeling
 date: 2017-06-02 07:45
 categories:
 - security
-javascript: true
 ---
 
 I recently stumbled on [this article](https://blog.docker.com/2017/05/docker-security-pycon-threat-modeling-state-machines/) and [its associated video](https://www.youtube.com/watch?v=n8l0xTdLnA8) which provide a very structured approach to thread modeling & security. Below is my summary of these excellent resources.

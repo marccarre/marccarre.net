@@ -6,7 +6,6 @@ date: 2016-05-08 18:38
 categories:
 - java
 - concurrency
-javascript: true
 ---
 
 With [`CompletableFuture<T>`](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html) (and its interface, [`CompletionStage<T>`](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html)), Java 8 finally brings the concept of *promises* to Java.

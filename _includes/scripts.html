@@ -8,11 +8,9 @@
   ga('send', 'pageview');
 </script>
 
-{% if page.javascript %}
-  <!-- Javascript dependencies: jQuery & Bootstrap -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-{% endif %}
+<!-- Javascript dependencies: jQuery & Bootstrap -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 
 {% if page.name == 'projects' %}
   <script type="text/javascript" src="{{ "/assets/js/github.js" | prepend: site.baseurl | prepend: site.url }}"></script>
@@ -23,7 +21,7 @@
     var disqus_shortname = '{{ site.disqus_shortname }}';
     var disqus_title = '{{ page.title }}';
     var disqus_identifier = '{{ page.url }}';
-    var disqus_config = function () { 
+    var disqus_config = function () {
       this.language = '{{ page.lang }}';
     };
     (function() {
