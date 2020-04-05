@@ -25,6 +25,8 @@ github_blacklist:
 - datasetgenerator
 - dell-xps-13-9360
 - eclipse-templates
+- eks-quickstart-app-dev
+- flux-playground
 - ginkgo-633
 - helene-et-marc
 - kaggle-algotrading
