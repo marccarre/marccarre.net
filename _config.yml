@@ -40,6 +40,7 @@ github_blacklist:
 - project-euler-java
 - project-euler-ruby
 - project-euler-scala
+- python-sample-project
 - raspberrypi
 - requirejs-example
 - rust-docker-dev-env
