@@ -16,7 +16,6 @@ github_username:  marccarre
 github_blacklist:
 - algo-exercises
 - algo-trading-strategy
-- angular-gantt
 - coursera-algs
 - coursera-progfun
 - cpp-empty-project
