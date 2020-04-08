@@ -55,7 +55,7 @@ A scale of your choice (e.g.: from 1 to 10) can be used for each criteria.
 2. Reproducibility (Probability): how easy is it to trigger the vulnerability. Most vulnerabilities will score high here but those that, for example, involve timing attacks would generally receive lower vulnerabilities as they may not be triggered 100% of the time.
 3. Exploitability (Probability): a measure of what resources are required to use the attack. The lowest score would generally be reserved for nation states, while a high score might indicate the attack could be done through something as simple as URL manipulation in a browser.
 4. Affected Users (Severity): a measure of how many users are affected by the attack. For example, maybe it only affects a specific class of user.
-5. Discoverability (Probability): how easy it is to uncover the vulnerability. A high score would indicate it is easily findable through standard web scraping tools and open source [pentest tools](https://www.owasp.org/index.php/Category:Penetration_Testing_Tools). At the other end of the scale, a vulnerability requiring intimate knowledge of a system’s internals would likely score low.
+5. Discoverability (Probability): how easy it is to uncover the vulnerability. A high score would indicate it is easily findable through standard web scraping tools and open source [pentest tools](https://owasp.org/www-community/Vulnerability_Scanning_Tools). At the other end of the scale, a vulnerability requiring intimate knowledge of a system’s internals would likely score low.
 
 ## Remediation
 
