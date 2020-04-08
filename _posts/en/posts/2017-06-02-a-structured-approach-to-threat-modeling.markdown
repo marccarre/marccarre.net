@@ -7,7 +7,7 @@ categories:
 - security
 ---
 
-I recently stumbled on [this article](https://blog.docker.com/2017/05/docker-security-pycon-threat-modeling-state-machines/) and [its associated video](https://www.youtube.com/watch?v=n8l0xTdLnA8) which provide a very structured approach to thread modeling & security. Below is my summary of these excellent resources.
+I recently stumbled on [this article](https://blog.docker.com/2017/05/docker-security-pycon-threat-modeling-state-machines/) and [its associated video](https://www.youtube.com/watch?v=n8l0xTdLnA8) which provide a very structured approach to threat modeling & security. Below is my summary of these excellent resources.
 
 ---------------
 
