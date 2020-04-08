@@ -38,7 +38,7 @@ For example, where do we have flows between processes without any trust boundary
 For each [STRIDE](https://en.wikipedia.org/wiki/STRIDE_(security)) category, look for behaviour permitted by the system which creates a vulnerability.
 A vulnerability may belong to more than one category.
 
-1. Spoofing: an entity pretending to be something it is not, generally by capturing a legitimate user’s credentials, e.g.: [brute force](https://www.owasp.org/index.php/Brute_force_attack), [CSRF](https://owasp.org/www-community/attacks/csrf).
+1. Spoofing: an entity pretending to be something it is not, generally by capturing a legitimate user’s credentials, e.g.: [brute force](https://owasp.org/www-community/attacks/Brute_force_attack), [CSRF](https://owasp.org/www-community/attacks/csrf).
 2. Tampering: the modification of data persisted within the system, e.g.: [SQL injection](https://www.owasp.org/index.php/SQL_Injection), [MITM](https://www.owasp.org/index.php/Man-in-the-middle_attack), [DNS cache poisoning](https://www.cs.cornell.edu/~shmat/shmat_securecomm10.pdf).
 3. Repudiation: the ability to perform operations that cannot be tracked, or for which the attacker can actively cover their tracks, e.g.: prove who did `rm -fr /var/log`.
 4. Information Disclosure: the acquisition of data by a trust level that should not have access to it, e.g.: bad messaging, [SQL injection](https://www.owasp.org/index.php/SQL_Injection), [MITM](https://www.owasp.org/index.php/Man-in-the-middle_attack).
