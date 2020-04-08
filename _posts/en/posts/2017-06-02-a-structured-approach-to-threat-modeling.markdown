@@ -89,7 +89,7 @@ one can have a very effective & systematic approach to security.
 - Threat modeling:
 
     - [https://www.owasp.org/index.php/Threat_Risk_Modeling](https://www.owasp.org/index.php/Threat_Risk_Modeling)
-    - [https://www.owasp.org/index.php/Application_Threat_Modeling](https://www.owasp.org/index.php/Application_Threat_Modeling)
+    - [https://owasp.org/www-community/Application_Threat_Modeling](https://owasp.org/www-community/Application_Threat_Modeling)
 
 - State machines and how to build simpler, more robust & more secure software:
 
