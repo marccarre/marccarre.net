@@ -50,6 +50,7 @@ github_blacklist:
 - spring-db-testing
 - utilities
 - VeraCrypt
+- zeromq-prototype
 
 # Build settings:
 markdown: kramdown
