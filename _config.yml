@@ -15,13 +15,11 @@ google_analytics:
 github_username:  marccarre
 github_blacklist:
 - algo-exercises
-- algo-trading-strategy
 - coursera-algs
 - coursera-progfun
 - cpp-empty-project
 - cpp-samples
 - cryptomator
-- datasetgenerator
 - dell-xps-13-9360
 - eclipse-templates
 - eks-quickstart-app-dev
