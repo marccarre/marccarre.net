@@ -1,33 +1,35 @@
-<!-- Google Analytics -->
-<script type="text/javascript" >
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', '{{ site.google_analytics.id }}', '{{ site.google_analytics.domain }}');
-  ga('send', 'pageview');
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics.id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', '{{ site.google_analytics.id }}');
 </script>
 
 <!-- Javascript dependencies: jQuery & Bootstrap -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+  integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+  crossorigin="anonymous"></script>
 
 {% if page.name == 'projects' %}
-  <script type="text/javascript" src="{{ "/assets/js/github.js" | prepend: site.baseurl | prepend: site.url }}"></script>
+<script type="text/javascript" src="{{ " /assets/js/github.js" | prepend: site.baseurl | prepend: site.url }}"></script>
 {% endif %}
 
 {% if page.comments %}
-  <script type="text/javascript" >
-    var disqus_shortname = '{{ site.disqus_shortname }}';
-    var disqus_title = '{{ page.title }}';
-    var disqus_identifier = '{{ page.url }}';
-    var disqus_config = function () {
-      this.language = '{{ page.lang }}';
-    };
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
+<script type="text/javascript">
+  var disqus_shortname = '{{ site.disqus_shortname }}';
+  var disqus_title = '{{ page.title }}';
+  var disqus_identifier = '{{ page.url }}';
+  var disqus_config = function () {
+    this.language = '{{ page.lang }}';
+  };
+  (function () {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
 {% endif %}
