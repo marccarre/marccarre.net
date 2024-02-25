@@ -3,10 +3,10 @@ en:
     title: "Articles"
     name: "articles"
     url: "/articles/"
-  reads:
-    title: "Reads"
-    name: "reads"
-    url: "/reads/"
+  notes:
+    title: "Notes"
+    name: "notes"
+    url: "/notes/"
   # projects:
   #   title: "Projects"
   #   name: "projects"
@@ -19,11 +19,11 @@ fr:
   articles:
     title: "Articles"
     name: "articles"
-    url: "/articles/"
+    url: "/articles-fr/"
   reads:
-    title: "Lectures"
-    name: "reads"
-    url: "/lectures/"
+    title: "Notes"
+    name: "notes"
+    url: "/notes-fr/"
   # projects:
   #   title: "Projets"
   #   name: "projects"
