@@ -2,7 +2,7 @@ en:
   articles:
     title: "Articles"
     name: "articles"
-    url: "/"
+    url: "/articles/"
   reads:
     title: "Reads"
     name: "reads"
@@ -14,7 +14,7 @@ en:
   about:
     title: "About"
     name: "about"
-    url: "/about/"
+    url: "/"
 fr:
   articles:
     title: "Articles"
