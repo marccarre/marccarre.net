@@ -15,19 +15,26 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         {% for menu_item in site.data.navigation[page.lang] %}
-          <li class="{% if menu_item[1].name == page.name %}active{% endif %}"><a href="{{ menu_item[1].url | prepend: site.baseurl | prepend: site.url }}">{{ menu_item[1].title }}</a></li>
+        <li class="{% if menu_item[1].name == page.name %}active{% endif %}"><a
+            href="{{ menu_item[1].url | prepend: site.baseurl | prepend: site.url }}">{{ menu_item[1].title }}</a></li>
         {% endfor %}
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="icon"><a href="https://github.com/{{ site.github_username }}" title="GitHub profile"><i class="fa fa-github-square fa-3x"></i></a></li>
-        <li class="icon"><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn profile"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
-        <li class="icon"><a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter page"><i class="fa fa-twitter-square fa-3x"></i></a></li>
-        <li class="icon"><a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" title="RSS subscription"><i class="fa fa-rss-square fa-3x"></i></a></li>
+        <li class="icon"><a href="https://github.com/{{ site.github_username }}" title="GitHub profile"><i
+              class="fa fa-github-square fa-3x"></i></a></li>
+        <li class="icon"><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn profile"><i
+              class="fa fa-linkedin-square fa-3x"></i></a></li>
+        <li class="icon"><a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter page"><i
+              class="fa fa-twitter-square fa-3x"></i></a></li>
+        <li class="icon"><a href="{{ " /feed.xml" | prepend: site.baseurl | prepend: site.url }}"
+            title="RSS subscription"><i class="fa fa-rss-square fa-3x"></i></a></li>
 
         {% assign posts = site.posts | where: "name", page.name | sort: 'path' %}
+        <!-- Disable multi-lingual feature:
         {% for post in posts %}
           <li><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.title }}">{{ post.lang | upcase }}</a></li>
         {% endfor %}
+        -->
       </ul>
     </div><!--/.navbar-collapse -->
 
