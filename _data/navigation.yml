@@ -7,10 +7,10 @@ en:
     title: "Reads"
     name: "reads"
     url: "/reads/"
-  projects:
-    title: "Projects"
-    name: "projects"
-    url: "/projects/"
+  # projects:
+  #   title: "Projects"
+  #   name: "projects"
+  #   url: "/projects/"
   about:
     title: "About"
     name: "about"
@@ -24,10 +24,10 @@ fr:
     title: "Lectures"
     name: "reads"
     url: "/lectures/"
-  projects:
-    title: "Projets"
-    name: "projects"
-    url: "/projets/"
+  # projects:
+  #   title: "Projets"
+  #   name: "projects"
+  #   url: "/projets/"
   about:
     title: "À propos"
     name: "about"
